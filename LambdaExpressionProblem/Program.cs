@@ -6,11 +6,11 @@ namespace LambdaExpressionProblem
     {
         public static void Main(String[] args)
         {
-            Console.WriteLine("Enter Email");
+            Console.WriteLine("Enter Password");
             string mobile = Console.ReadLine();
             User valid = new User();
             string output = valid.FirstnameCheckusingLambda(mobile);
-            if(output == "Email is Valid")
+            if(output == "Password is Valid")
             {
                 Console.WriteLine(output);
             }

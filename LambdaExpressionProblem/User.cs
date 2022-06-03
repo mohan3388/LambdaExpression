@@ -10,8 +10,8 @@ namespace LambdaExpressionProblem
     internal class User
     {
         
-        string Mobile = "^[91]{2}[ ]{1}[0-9]{9,}$";
+        string Password = "^[0-9A-Za-z]{8,}$";
        
-        public string FirstnameCheckusingLambda(string mobile) => Regex.IsMatch(mobile, Mobile) ? "Mobile is Valid" : "Mobile is not Valid";
+        public string FirstnameCheckusingLambda(string password) => Regex.IsMatch(password, Password) ? "Password is Valid" : "Password is not Valid";
     }
 }
