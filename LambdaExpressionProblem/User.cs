@@ -10,8 +10,8 @@ namespace LambdaExpressionProblem
     internal class User
     {
         
-        string Email = "^[0-9a-zA-z]+([._+-]?[0-9a-zA-z]+)@[0-9a-zA-z]+.([c]{1}[o]{1}[m]{1})([n]{1}[e]{1}[t]{1})[,]([a]{1}[u]{1})([.][c]{1}[o]{1}[m]{1})$";
+        string Mobile = "^[91]{2}[ ]{1}[0-9]{9,}$";
        
-        public string FirstnameCheckusingLambda(string email) => Regex.IsMatch(email, Email) ? "Email is Valid" : "Email is not Valid";
+        public string FirstnameCheckusingLambda(string mobile) => Regex.IsMatch(mobile, Mobile) ? "Mobile is Valid" : "Mobile is not Valid";
     }
 }
